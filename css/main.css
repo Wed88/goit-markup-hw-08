@@ -108,14 +108,24 @@ img {
 }
 
 .title {
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
 .title--bottom {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+  .title--bottom {
+    margin-bottom: 50px;
+  }
 }
 
 .social-list {
@@ -673,13 +683,6 @@ img {
   .features__thumb {
     width: 270px;
   }
-  .features__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
-  }
   .features__item {
     flex-basis: calc((100% - 120px) / 4);
     margin-top: 30px;
@@ -733,20 +736,18 @@ img {
   background: #f5f4fa;
 }
 
-.team__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
-}
-
 .team__item {
-  flex-basis: calc((100% - 120px) / 4);
-  margin-top: 30px;
-  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team__item:not(:first-child) {
+  margin-top: 30px;
 }
 
 .team__container {
@@ -773,6 +774,42 @@ img {
   letter-spacing: 0.03em;
   color: var(--second-color);
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 480px) {
+  .team__item {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .team__item {
+    flex-basis: calc((100% - 90px) / 3);
+    width: 354px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .team__item {
+    flex-basis: calc((100% - 120px) / 4);
+    width: 270px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
 }
 
 .client__list {
