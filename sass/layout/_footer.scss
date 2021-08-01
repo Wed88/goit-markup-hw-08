@@ -6,6 +6,17 @@
 
 .footer__conteiner {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__box {
+  margin-bottom: 60px;
+}
+
+.footer__address-box {
+  margin-bottom: 60px;
 }
 
 .address {
@@ -13,7 +24,7 @@
 }
 
 .address__list :not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .address__map {
@@ -22,22 +33,6 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
-}
-
-.footer__social {
-  margin-top: 12px;
-  margin-left: 70px;
-}
-
-.footer-text-action {
-  font-family: var(--main-font);
-  font-weight: var(--main-weight);
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 20px;
   color: #ffffff;
 }
 
@@ -52,13 +47,27 @@
 }
 
 .footer__form {
-  margin-top: 12px;
-  margin-left: 93px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text-action {
+  font-family: var(--main-font);
+  font-weight: var(--main-weight);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .form__imput {
-  width: 358px;
+  width: 100%;
   height: 50px;
+  margin-bottom: 20px;
   color: #ffffff;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -84,7 +93,7 @@
   font-weight: var(--main-weight);
   font-size: 16px;
   line-height: 1.87;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -102,4 +111,54 @@
   width: 24px;
   height: 24px;
   margin-left: 10px;
+}
+
+// 480+
+@media screen and (min-width: 480px) {
+  .form__imput {
+    width: 450px;
+  }
+}
+
+// 768+
+@media screen and (min-width: 768px) {
+  .footer__box {
+    display: flex;
+    align-items: flex-start;
+  }
+  .footer__address-box {
+    margin-right: 165px;
+    margin-bottom: 0;
+  }
+  .footer__social {
+    padding-top: 5px;
+  }
+}
+
+// 1200+
+@media screen and (min-width: 1200px) {
+  .footer__conteiner {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .footer__box {
+    margin-right: 93px;
+  }
+  .footer__address-box {
+    margin-right: 70px;
+  }
+  .footer__social {
+    padding-top: 12px;
+  }
+  .footer__form {
+    display: block;
+    padding-top: 12px;
+  }
+  .form__imput {
+    width: 358px;
+  }
+  .form__btn {
+    display: inline-flex;
+  }
 }
