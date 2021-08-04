@@ -39,7 +39,7 @@
             </li>
           </ul>
         </nav>
-        <button class="burger-btn">
+        <button class="burger-btn" data-menu-open>
           <svg class="burger-btn__icon">
             <use href="./images/icon/sprite.svg#icon-burger"></use>
           </svg>
@@ -63,9 +63,9 @@
           </li>
         </ul>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
-          <button type="button" class="mobile-menu__close-btn">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
             <svg class="mobile-menu__close-icon">
               <use href="./images/icon/sprite.svg#icon-close_btn"></use>
             </svg>
@@ -79,6 +79,30 @@
             </li>
             <li class="nav-menu__item">
               <a class="nav-menu__link link">Контакты</a>
+            </li>
+          </ul>
+          <ul class="burger-contact list">
+            <li class="burger-contact__item">
+              <a class="burger-contact__tel link" href="tel:+380961111111"> +38 096 111 11 11 </a>
+            </li>
+            <li class="burger-contact__item">
+              <a class="burger-contact__mail link" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="burger-social list">
+            <li class="burger-social__item">
+              <a class="burger-social__link burger-social__link--after link" href="">Instagram</a>
+            </li>
+            <li class="burger-social__item">
+              <a class="burger-social__link burger-social__link--after link" href="">Twitter</a>
+            </li>
+            <li class="burger-social__item">
+              <a class="burger-social__link burger-social__link--after link" href="">Facebook</a>
+            </li>
+            <li class="burger-social__item">
+              <a class="burger-social__link link" href="">LinkedIn</a>
             </li>
           </ul>
         </div>
@@ -758,6 +782,7 @@
       </div>
     </div> -->
 
+    <script src="./js/mobile-menu.js"></script>
     <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
