@@ -87,6 +87,10 @@
   &:focus {
     color: var(--accent-color);
   }
+
+  &--current {
+    color: var(--accent-color);
+  }
 }
 
 .burger-contact {
