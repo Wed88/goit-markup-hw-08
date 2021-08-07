@@ -68,13 +68,19 @@
 }
 
 .mobile-menu__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
+  height: 100%;
   padding-top: 48px;
+  padding-bottom: 48px;
   padding-left: 40px;
+  padding-right: 40px;
 }
 
 .nav-menu {
-  margin-bottom: 302px;
+  margin-bottom: auto;
 }
 
 .nav-menu__item:not(:last-child) {
