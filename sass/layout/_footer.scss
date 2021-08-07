@@ -11,7 +11,9 @@
   text-align: center;
 }
 
-
+.footer__box {
+  margin-bottom: 60px;
+}
 
 .footer__address-box {
   margin-bottom: 60px;
@@ -142,6 +144,7 @@
   }
   .footer__box {
     margin-right: 93px;
+    margin-bottom: 0;
   }
   .footer__address-box {
     margin-right: 70px;
