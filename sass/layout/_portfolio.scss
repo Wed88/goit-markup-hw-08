@@ -121,6 +121,13 @@
   color: var(--second-color);
 }
 
+//0-479
+@media screen and (max-width: 479px) {
+  .image-portfolio {
+    width: 100%;
+  }
+}
+
 // 480+
 @media screen and (min-width: 480px) {
   .item-portfolio {

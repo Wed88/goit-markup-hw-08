@@ -211,8 +211,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -222,7 +222,7 @@ img {
 
 .close-btn {
   position: absolute;
-  top: 8px;
+  top: 15px;
   right: 8px;
   display: flex;
   align-items: center;
@@ -249,6 +249,17 @@ img {
   fill: var(--accent-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+  .close-btn {
+    top: 8px;
+    right: 8px;
+  }
+}
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -258,7 +269,7 @@ img {
   font-family: var(--main-font);
   font-weight: var(--main-weight);
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
@@ -326,8 +337,8 @@ img {
 .modal-form-comment::placeholder {
   font-family: var(--main-font);
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -344,10 +355,11 @@ img {
   align-items: center;
   font-family: var(--main-font);
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--second-color);
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 
@@ -399,6 +411,30 @@ img {
   padding: 10px 55px;
 }
 
+@media screen and (max-width: 767px) {
+  .modal-form-field:hover {
+    color: var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-action {
+    font-size: 20px;
+    line-height: 1.15;
+  }
+  .modal-form-comment::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .modal-form-checkbox-label {
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
 .header {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -415,11 +451,17 @@ img {
   border: none;
   padding: 0;
   line-height: 0;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .burger-btn__icon {
   width: 40px;
   height: 40px;
+}
+
+.burger-btn__icon:hover {
+  fill: var(--accent-color);
 }
 
 .mobile-menu {
@@ -972,6 +1014,12 @@ img {
   margin-bottom: 16px;
 }
 
+@media screen and (max-width: 479px) {
+  .team__image {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .team__item {
     width: 450px;
@@ -1003,6 +1051,7 @@ img {
 .client__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: -30px;
   margin-left: -30px;
 }
@@ -1168,6 +1217,12 @@ img {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--second-color);
+}
+
+@media screen and (max-width: 479px) {
+  .image-portfolio {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 480px) {
